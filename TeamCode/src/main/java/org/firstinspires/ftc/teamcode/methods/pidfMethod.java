@@ -21,10 +21,10 @@ public class pidfMethod {
     public static double kP = 0.0;
     public static double kI = 0.0;
     public static double kD = 0.0;
-    public static double kF = 0.0;   // power needed to hold the arm at horizontal
+    public static double kF = 0.01;   // power needed to hold the arm at horizontal
 
     // ============ MECHANICAL CONSTANTS ============
-    public static double TICKS_PER_REV = 537.7;  // gobilda 312rpm; 384.5 for 435rpm
+    public static double TICKS_PER_REV = 1993.6;  // gobilda 312rpm; 384.5 for 435rpm
     public static double GEAR_RATIO = 1.0;    // extra reduction AFTER the motor
     public static double ARM_OFFSET_DEG = 0.0;    // bar angle off horizontal when encoder = 0
 
