@@ -34,7 +34,7 @@ public class pidfMethod {
     // set these once you know your real range - stops the PID from driving
     // the linkage into your own frame
     public static int MIN_TICKS = 0;
-    public static int MAX_TICKS = 1200;
+    public static int MAX_TICKS = 400;
 
     // ================== LIMITS ====================
     public static double MAX_POWER = 1.0;
