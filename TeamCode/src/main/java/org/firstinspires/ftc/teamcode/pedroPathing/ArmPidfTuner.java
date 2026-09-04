@@ -58,7 +58,7 @@ public class ArmPidfTuner extends OpMode {
         telemetryM.addLine ("Arm PIDF Tuner ready");
         telemetryM.addLine("Set values in Panels before enabling.");
 
-        telemetryM = PanelsTelemetry.INSTANCE.getTelemetry();
+
 
         telemetryM.update(telemetry);
     }

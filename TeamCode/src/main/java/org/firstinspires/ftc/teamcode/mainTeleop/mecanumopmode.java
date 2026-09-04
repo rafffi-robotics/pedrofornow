@@ -19,7 +19,7 @@ public class mecanumopmode extends OpMode{
     private CRServo intakeL;
     private DcMotor intake;
     private pidfMethod arm;
-    static final int ARM_DOWN = 0, ARM_LOW = 230, ARM_HIGH = 900;
+    static final int ARM_DOWN = 0, ARM_LOW = 230, ARM_HIGH = 0;
 
 
     @Override
