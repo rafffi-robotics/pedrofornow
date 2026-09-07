@@ -20,8 +20,8 @@ public class pidfMethod {
     // ================= TUNE THESE =================
     public static double kP = 0.0;
     public static double kI = 0.0;
-    public static double kD = 0.0;
-    public static double kF = 0.01;   // power needed to hold the arm at horizontal
+    public static double kD = 0.015;
+    public static double kF = 0.025;   // power needed to hold the arm at horizontal
 
     // ============ MECHANICAL CONSTANTS ============
     public static double TICKS_PER_REV = 1993.6;  // gobilda 312rpm; 384.5 for 435rpm

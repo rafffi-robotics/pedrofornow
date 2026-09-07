@@ -55,12 +55,12 @@ public class ArmPidfTuner extends OpMode {
 
         ENABLED = false;
 
-        telemetryM.addLine ("Arm PIDF Tuner ready");
-        telemetryM.addLine("Set values in Panels before enabling.");
+        telemetryM.debug ("Arm PIDF Tuner ready");
+        telemetryM.debug("Set values in Panels before enabling.");
 
 
 
-        telemetryM.update(telemetry);
+        telemetryM.update();
     }
 
 
@@ -113,7 +113,7 @@ public class ArmPidfTuner extends OpMode {
         telemetryM.debug("At Target", controller.atTarget());
         telemetryM.debug("Encoder Warning", controller.encodersDisagree());
 
-        telemetryM.update(telemetry);
+        telemetryM.update();
 
     }
 
