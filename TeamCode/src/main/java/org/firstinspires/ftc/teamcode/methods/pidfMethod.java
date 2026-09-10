@@ -18,9 +18,9 @@ import com.qualcomm.robotcore.util.Range;
 public class pidfMethod {
 
     // ================= TUNE THESE =================
-    public static double kP = 0.0;
+    public static double kP = 0.015;
     public static double kI = 0.0;
-    public static double kD = 0.015;
+    public static double kD = 0.0;
     public static double kF = 0.025;   // power needed to hold the arm at horizontal
 
     // ============ MECHANICAL CONSTANTS ============
@@ -37,11 +37,11 @@ public class pidfMethod {
     public static int MAX_TICKS = 400;
 
     // ================== LIMITS ====================
-    public static double MAX_POWER = 1.0;
+    public static double MAX_POWER = 0.5;
     public static double TOLERANCE_TICKS = 10;
     public static double I_ZONE_TICKS = 100;
     public static double MAX_INTEGRAL = 200;
-    public static double MISMATCH_LIMIT = 50;   // ticks of disagreement before you worry
+    public static double MISMATCH_LIMIT = 50;
 
     // ================== STATE =====================
     private final DcMotorEx left;

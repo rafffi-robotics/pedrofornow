@@ -19,6 +19,8 @@ public class mecanumopmode extends OpMode{
     private CRServo intakeL;
     private DcMotor intake;
     private pidfMethod arm;
+    private DcMotorEx l;
+    private DcMotorEx r;
     static final int ARM_DOWN = 0, ARM_LOW = 230, ARM_HIGH = 340;
 
 
@@ -27,8 +29,8 @@ public class mecanumopmode extends OpMode{
     {
         //intake = hardwareMap.get(DcMotor.class, "intake");
        drive.init(hardwareMap);
-        DcMotorEx l = hardwareMap.get(DcMotorEx.class, "LeftArm");
-        DcMotorEx r = hardwareMap.get(DcMotorEx.class, "RightArm ");
+         l = hardwareMap.get(DcMotorEx.class, "LeftArm");
+         r = hardwareMap.get(DcMotorEx.class, "RightArm ");
         arm = new pidfMethod(l, r);
         arm.initMotors();
     }
@@ -58,9 +60,9 @@ public class mecanumopmode extends OpMode{
 //        }
 
 
-        if (gamepad2.a) arm.setTarget(ARM_DOWN);
-        if (gamepad2.b) arm.setTarget(ARM_LOW);
-        if (gamepad2.y) arm.setTarget(ARM_HIGH);
+        if (gamepad1.a) arm.setTarget(ARM_DOWN);
+        if (gamepad1.b) arm.setTarget(ARM_LOW);
+        if (gamepad1.y) arm.setTarget(ARM_HIGH);
 
         double power = arm.update();      // must run EVERY loop
 
